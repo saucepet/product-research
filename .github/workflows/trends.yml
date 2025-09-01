@@ -2,7 +2,7 @@ name: Fetch Google Trends
 
 on:
   schedule:
-    - cron: "0 2 * * 1"   # 每周一 02:00 UTC 自动运行
+  - cron: "0 23 * * *"  # 北京时间每天早上7点 23:00 UTC 自动运行
   workflow_dispatch:      # 允许手动触发
 
 jobs:
